@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="title">
+        <h1> Welcome to PR's Etch-a-Sketch Amalgamation!</h1>
+    </div>
+    <div class="content">
+        <div class="menu">
+            <div class="toolbox"> Tool Selector:
+                <div><button value="OFF" id="paintBrush" class="tool">Paint Brush</button><input id="colorPicker" type="color"></div>
+                <div><button value = "OFF" id="eraser" class="tool">Eraser</button></div>
+                <div><button value="OFF" id="rainbow" class="tool">Rainbow Pen</button></div>
+                <div><button value="OFF" id="static" class="tool">Static Pen</button></div>
+            </div>
+            <div class="slider">
+                <div class="setSize">Grid Size:</div>
+                <div>2<input type="range" min="2" max="100" value="16" id="changeSize" oninput="sliderValue.innerText = this.value"></input>100</div>
+                <div id="sliderValue" > 16 </div>
+            </div>
+            <button id="resetBtn">Clear</button>
+        </div>
+        <div class="sketchPad"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    padding: 60px;
+}
+
+.title {
+    text-align: center;
+    padding: 12px;
+    color: lightslategray
+}
+
+.content {
+    display: flex;
+    padding: 24px;
+    height: 960px;
+    justify-content: center;
+    padding-right: 280px;
+
+}
+
+.menu {
+    flex: 1 8 15%;
+    color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    padding: 0 240px;
+}
+
+.sketchPad {
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid lightslategray;
+    min-width: 960px;
+    max-width: 960px;
+  }
+
+.pixel {
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#sliderValue, .setSize {
+    text-align: center;
+}
